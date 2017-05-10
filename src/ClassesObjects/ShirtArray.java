@@ -11,37 +11,41 @@ public class ShirtArray {
         Shirt reginald = new Shirt();
         */
 
-        Shirt[] designers = {new Shirt(),new Shirt(), new Shirt()};
+        Shirt[] designers = {new Shirt('B',21.99,"A12345"),
+                new Shirt('G',19.99,"A34567"),
+                new Shirt('W',25.99,"A98765")};
 
         //need to assign Nathan's info
         /*
         nathan.colorCode = 'B';
         nathan.itemId = "A12345";
-        nathan.price = 21.99; */
+        nathan.price = 21.99;
 
         designers[0].colorCode = 'B';
-        designers[0].itemId = "A12345";
         designers[0].price = 21.99;
+        designers[0].itemId = "A12345";
+        */
+
 
         // need to assign Michael's info
         /*
         michael.colorCode = 'G';
         michael.itemId = "A34567";
-        michael.price = 19.99; */
+        michael.price = 19.99;
 
         designers[1].colorCode = 'G';
         designers[1].itemId = "A34567";
-        designers[1].price = 19.99;
+        designers[1].price = 19.99; */
 
         // need to assign reginald's info
         /*
         reginald.colorCode = 'W';
         reginald.itemId = "A98765";
-        reginald.price = 25.99; */
+        reginald.price = 25.99;
 
         designers[2].colorCode = 'W';
         designers[2].itemId = "A98765";
-        designers[2].price = 25.99;
+        designers[2].price = 25.99; */
 
         //Verify all people's designs
         /*
@@ -57,12 +61,13 @@ public class ShirtArray {
         designers[1].printFields();
         System.out.println("----------");
         designers[2].printFields();
-        */
+
 
         for (Shirt temp:designers) {
             temp.printFields();
             System.out.println("----------");
         }
+        */
     }
 
 

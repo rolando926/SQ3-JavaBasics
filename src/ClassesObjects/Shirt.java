@@ -8,6 +8,17 @@ public class Shirt {
     double price;
     String itemId;
 
+    public Shirt(){}
+
+    public Shirt(char color, double thePrice, String Id) {
+        colorCode = color;
+        price = thePrice;
+        itemId = Id;
+
+        printFields();
+        System.out.println("----------------");
+    }
+
     public void printFields(){
         System.out.println("colorCode = "+colorCode);
         System.out.println("itemId = "+itemId);
