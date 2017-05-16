@@ -14,6 +14,7 @@ public class RegexMain {
                         "AB@mycompany.org",
                         "abcd@homedepot.info",
                         "your!!!Name123@homedepot.com"};
+        String[] passwords = {"pas$word01","Pa$$word01","Pa$$01","Passw0rd01"};
 
         //String firstName = args[0];
         //String lastName = args[1];
@@ -29,6 +30,9 @@ public class RegexMain {
         //myRegex.applyRgxArrayString(fruits,-1);
 
         //Validate Email Regex Rule
-        myRegex.validateEmail(emails);
+        //myRegex.validateEmail(emails);
+
+        // Validate Password Regex Rule
+        myRegex.validatePassword(passwords);
     }
 }

@@ -80,11 +80,49 @@ public class Regex {
 
     }
 
-
+    // Method to validate if email is valid based on a set of requirements
     public void validateEmail(String[] emails){
-        String regexRuleApply = "^[^@]{3}[^@]*@[a-zA-Z]+((.com)|(.org)|(.net)|(.gov))$";
+        String regexToApply = "^[^@]{3}[^@]*@[a-zA-Z]+((.com)|(.org)|(.net)|(.gov))$";
         for (String temp:emails) {
-            if(temp.matches(regexRuleApply)){
+            if(temp.matches(regexToApply)){
+                System.out.println(temp);
+            }
+        }
+    }
+
+    // Method to validate if password is valid based on set of requirements
+    public void validatePassword(String[] passwords){
+
+        // All the regex rules for password
+        String regexRule1 = ".{8,}"; // At least 8 or more characters
+        String regexRule2 = ".*[A-Z].*"; // At least one or more upper case
+        String regexRule3 = ".*[a-z].*"; // At least one or more lower case
+        String regexRule4 = ".*\\W.*"; // At least one special char
+        String regexRule5 = ".*[0-9].*"; // At least one number
+
+        // The use of the regex look ahead can be achieved by using the ?= expression
+        // See how we apply 5 different rules into a single rule by using parenthesis
+        String regexAllRules = "(?=.*[A-Z])(?=.*[a-z])(?=.{8})(?=.*\\W)(?=.*[0-9]).*";
+
+        // Only prints out valid passwords based on separate rules
+        for (String temp:passwords) {
+            if(temp.matches(regexRule1)){
+                if(temp.matches(regexRule2)){
+                    if(temp.matches(regexRule3)){
+                        if(temp.matches(regexRule4)){
+                            if(temp.matches(regexRule5)){
+                                System.out.println(temp);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        // Only prints out valid passwords based on one consolidated rule
+        for (String temp:passwords) {
+            if(temp.matches(regexAllRules)){
                 System.out.println(temp);
             }
         }
