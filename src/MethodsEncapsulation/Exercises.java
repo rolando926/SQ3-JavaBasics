@@ -49,4 +49,8 @@ public class Exercises {
         }
         return counter;
     }
+
+    public void replaceCharInString(String str, String ch){
+        System.out.println(str.replaceAll("[aeiouAEIOU]","*"));
+    }
 }

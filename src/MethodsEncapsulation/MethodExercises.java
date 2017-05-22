@@ -24,5 +24,7 @@ public class MethodExercises {
         String str = "Three eyes have I, all in a row; when the red one opens, all freeze.";
         number = myExercises.countVowelsString(str);
         System.out.println("Vowels = "+number);
+
+        myExercises.replaceCharInString(str,"$");
     }
 }
