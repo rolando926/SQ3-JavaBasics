@@ -9,7 +9,7 @@ public class ShirtMain {
         Shirt myShirt = new Shirt();
         Shirt yourShirt = new Shirt();
 
-        // Assigments to the class field
+        // Assignments to the class field
         myShirt.colorCode = 'G';
         yourShirt.colorCode = 'R';
 
