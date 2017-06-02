@@ -50,6 +50,7 @@ public class ListCollection {
         myArrayList.removeIf(str -> {
             int count = 0;
             for(int i = 0; i < str.length(); i++){
+                // By popular demand!!! Regex...
                 if((Character.toString(str.charAt(i))).matches("[aA]")){
                     count++;
                 }
